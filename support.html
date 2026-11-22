@@ -39,17 +39,36 @@ how to reach us.</p>
   <li>Point your camera at a flashing light source.</li>
   <li>Hold the device steady and centered on the light — MorseFlash decodes the
       flashes into text in real time.</li>
+  <li>For a light that is far away, use the zoom buttons or pinch the camera view.</li>
+</ul>
+
+<p><strong>Record a video (version 1.1 and later, optional):</strong></p>
+<ul>
+  <li>Turn on <strong>RECORD VIDEO</strong>, then start receiving.</li>
+  <li>When the app says a loop is captured, tap <strong>STOP &amp; SAVE</strong>, or
+      keep recording for more loops. The video is saved to Photos when you stop.</li>
+</ul>
+
+<p><strong>AI decode (version 1.1 and later, optional):</strong></p>
+<ul>
+  <li>On the RECEIVE tab, tap <strong>AI</strong>, connect an API key from your own
+      Anthropic Console account, and turn AI decode on.</li>
+  <li>Record a transmission, then tap <strong>STOP &amp; SEND TO CLAUDE</strong> in the
+      reminder (or <strong>DECODE WITH CLAUDE</strong>) and keep the
+      app open. Each decode is billed to your Anthropic account.</li>
 </ul>
 
 <h2>Permissions</h2>
 <ul>
-  <li><strong>Camera</strong> — required for the Receive feature. Camera frames
-      are processed on your device only and are never stored or uploaded.</li>
+  <li><strong>Camera</strong> — used to receive, and needed by iOS to control the
+      flashlight. Camera pictures are saved only with RECORD VIDEO and uploaded only
+      when you use AI decode.</li>
+  <li><strong>Photos (add only)</strong> — used by RECORD VIDEO to save your videos.</li>
   <li><strong>Flashlight</strong> — used by the Transmit feature to blink your
       message.</li>
 </ul>
 <p>If you previously denied a permission, enable it in
-<code>Settings &rarr; MorseFlash</code> and allow Camera access.</p>
+<code>Settings &rarr; MorseFlash</code> and allow Camera or Photos access.</p>
 
 <h2>Troubleshooting</h2>
 <ul>
@@ -60,22 +79,26 @@ how to reach us.</p>
   <li><strong>Receiver isn't decoding:</strong> Hold the phone steady, keep the
       light source centered in the preview, and reduce background light or
       glare. Very fast or irregular flashing may not decode reliably.</li>
+  <li><strong>A recording didn't reach Photos:</strong> Allow MorseFlash to add to
+      Photos in <code>Settings &rarr; MorseFlash</code>, then open the app's RECEIVE
+      tab. The app keeps the recording and saves it then.</li>
   <li><strong>Camera preview is black:</strong> Confirm Camera permission is
       granted in <code>Settings &rarr; MorseFlash</code>.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <p><strong>Does MorseFlash need an internet connection?</strong><br>
-No. Sending and receiving Morse code works fully offline. An internet connection
-is only used to display ads.</p>
+No. Sending and receiving work fully offline. Only the optional AI decode needs the
+internet. (Version 1.0 also uses it to show ads.)</p>
 
 <p><strong>Do you collect my data?</strong><br>
-We don't require an account or collect personal information directly. The app
-shows ads via Google AdMob. See our
-<a href="./">Privacy Policy</a> for details.</p>
+We have no servers and don't receive your data. If you use AI decode, pictures from
+your recording go to Anthropic with your own API key. Version 1.0 shows ads through
+Google AdMob. See our <a href="./">Privacy Policy</a> for details.</p>
 
 <p><strong>Is MorseFlash free?</strong><br>
-Yes. MorseFlash is free and supported by banner ads.</p>
+Yes. Version 1.1 and later has no ads. AI decode is optional, and Anthropic bills
+you for what you use.</p>
 
 <h2>Contact Us</h2>
 <p>Questions, bugs, or suggestions? Email us and we'll get back to you:</p>
